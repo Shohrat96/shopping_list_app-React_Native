@@ -23,20 +23,6 @@ const CustomDrawerContent=(props)=>{
   const reduxState=props.store.getState();
   return (
     <View style={{flex:1}}>
-      {/*<View style={styles.drawerHeadWrap}>
-        <Image style={{width:50, height:50, marginLeft:16}} source={avatarImg}/>
-        <Text style={styles.userName}>{reduxState.lists.currentUser.username}</Text>
-      </View>
-      <View style={styles.content}>
-        <FlatList 
-          contentContainerStyle={{alignItems:'center', justifyContent:'center'}}
-          style={{width:"100%", flex:1}}
-          data={props.state.routes}
-          renderItem={({ item }) => <Item onPress={()=>navigation.navigate(item.name)} item={item}/>}
-          keyExtractor={item => item.name}
-        />
-      </View>
-      */}
       <View style={styles.drawerHeadWrap}>
         <Image style={{width:50, height:50, marginLeft:16}} source={avatarImg}/>
         <Text style={styles.userName}>{reduxState.lists.currentUser.username}</Text>
